@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleções - Tempo De Rei</title>
+    <link rel="stylesheet" href="/coleção/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    </head>
+
+    <body>
+        <!-- Header (mantido do código anterior) -->
+        <header>
+            <div class="logo-container">
+                <h1 class="logo">Tempo de Rei</h1>
+                <p class="slogan">Onde o tempo veste a realeza</p>
+            </div>
+            <nav>
+                <a href="/inicio/index.html">Início</a>
+                <a href="/coleção/colecao.html">Coleções</a>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+
+        <!-- Seção Coleções -->
+        <section class="colecoes">
+            <h2 class="titulo-secao">Nossas Coleções Reais</h2>
+
+            <div class="grade-produtos">
+                <!-- Produto 1 com Carrossel -->
+                <div class="produto">
+                    <div class="carrossel-container">
+                        <div class="carrossel" id="carrossel1">
+                            <img src="/imagens/hublot/hublot_frente.jpg" alt="Relógio Imperial - Foto 1">
+                            <img src="/imagens/hublot/hublot_deitado.jpg" alt="Relógio Imperial - Foto 2">
+                            <img src="/imagens/hublot/hublot_verso.jpg" alt="Relógio Imperial - Foto 3">
+                        </div>
+                        <div class="carrossel-botoes">
+                            <button class="carrossel-btn" onclick="moverCarrossel('carrossel1', -1)">❮</button>
+                            <button class="carrossel-btn" onclick="moverCarrossel('carrossel1', 1)">❯</button>
+                        </div>
+                        <div class="indicadores" id="indicadores1"></div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Hublot Geneve</h3>
+                        <p class="produto-preco">R$189,99</p>
+                        <a href="https://wa.me/message/7AVN7SRH4VXWI1">
+                            <button class="botao-comprar">COMPRAR</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Produto 2 com Carrossel -->
+                <div class="produto">
+                    <div class="carrossel-container">
+                        <div class="carrossel" id="carrossel1">
+                            <img src="/imagens/casio vintage/casiovintage_frente.jpg" alt="Relógio Imperial - Foto 1">
+                            <img src="/imagens/casio vintage/casiovintage_deitado.jpg" alt="Relógio Imperial - Foto 2">
+                            <img src="/imagens/casio vintage/casiovintage_verso.jpg" alt="Relógio Imperial - Foto 3">
+                        </div>
+                        <div class="carrossel-botoes">
+                            <button class="carrossel-btn" onclick="moverCarrossel('carrossel1', -1)">❮</button>
+                            <button class="carrossel-btn" onclick="moverCarrossel('carrossel1', 1)">❯</button>
+                        </div>
+                        <div class="indicadores" id="indicadores1"></div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Vintage MTP</h3>
+                        <p class="produto-preco">R$189,99</p>
+                        <a href="https://wa.me/message/7AVN7SRH4VXWI1">
+                            <button class="botao-comprar">COMPRAR</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Produto 3 com carrosel -->
+                <div class="produto">
+                    <div class="carrossel-container">
+                        <div class="carrossel" id="carrossel1">
+                            <img src="/imagens/casio vintage/casioredondo_frente.jpg" alt="Casio A1022">
+                            <img src="/imagens/casio vintage/casioredondo_deitado.jpg" alt="Casio A1022">
+                        </div>
+                        <div class="carrossel-botoes">
+                            <button class="carrossel-btn" onclick="moverCarrossel('carrossel1', -1)">❮</button>
+                            <button class="carrossel-btn" onclick="moverCarrossel('carrossel1', 1)">❯</button>
+                        </div>
+                        <div class="indicadores" id="indicadores1"></div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Vintage A1022</h3>
+                        <p class="produto-preco">R$189,99</p>
+                        <a href="https://wa.me/message/7AVN7SRH4VXWI1">
+                            <button class="botao-comprar">COMPRAR</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Produto 4 com carrosel -->
+                <div class="produto">
+                    <div class="carrossel-container">
+                        <div class="carrossel" id="carrossel1">
+                            <img src="/imagens/casio/casiof-91w-frente.jpg" alt="Casio A1022">
+                            <img src="/imagens/casio/casiof-91w-verso.jpg" alt="Casio A1022">
+                        </div>
+                        <div class="carrossel-botoes">
+                            <button class="carrossel-btn" onclick="moverCarrossel('carrossel1', -1)">❮</button>
+                            <button class="carrossel-btn" onclick="moverCarrossel('carrossel1', 1)">❯</button>
+                        </div>
+                        <div class="indicadores" id="indicadores1"></div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">F-91W</h3>
+                        <p class="produto-preco">R$59,99</p>
+                        <a href="https://wa.me/message/7AVN7SRH4VXWI1">
+                            <button class="botao-comprar">COMPRAR</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div class="carrossel-container">
+                        <div class="carrossel" id="carrossel1">
+                            <img src="/imagens/smartwatch/serie 9 pro.jpg" alt="Casio A1022">
+                            <img src="/imagens/smartwatch/serie 9 pro_verso.jpg" alt="Casio A1022">
+                        </div>
+                        <div class="carrossel-botoes">
+                            <button class="carrossel-btn" onclick="moverCarrossel('carrossel1', -1)">❮</button>
+                            <button class="carrossel-btn" onclick="moverCarrossel('carrossel1', 1)">❯</button>
+                        </div>
+                        <div class="indicadores" id="indicadores1"></div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Smartwatch Serie 9 pro</h3>
+                        <p class="produto-preco">R$319,99</p>
+                        <a href="https://wa.me/message/7AVN7SRH4VXWI1">
+                            <button class="botao-comprar">COMPRAR</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Link para Font Awesome (ícones) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="/coleção/script.js"></script>
+    </body>
+
+</html>
