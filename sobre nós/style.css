@@ -1,0 +1,292 @@
+/* ===== BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f8f5f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #000;
+    padding: 20px 0;
+    border-bottom: 2px solid #d4af37;
+    /* Dourado */
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #d4af37;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.slogan {
+    font-style: italic;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #f8f8f8;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* ===== HERO ===== */
+.hero-sobre {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/imagens/fundo/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #d4af37;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.sobre-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+/* Seção História */
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.texto-historia h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+}
+
+.texto-historia h2 i {
+    color: #d4af37;
+    margin-right: 10px;
+}
+
+.texto-historia p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.imagem-historia img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Valores */
+.valores {
+    margin: 5rem 0;
+}
+
+.valores h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #000;
+}
+
+.valores h2 i {
+    color: #d4af37;
+    margin-right: 10px;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.valor-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.valor-card:hover {
+    transform: translateY(-10px);
+}
+
+.valor-card i {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+}
+
+.valor-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Seção Equipe */
+.equipe {
+    margin: 5rem 0;
+}
+
+.equipe h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #000;
+}
+
+.equipe h2 i {
+    color: #d4af37;
+    margin-right: 10px;
+}
+
+.equipe-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.equipe-content img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.equipe-texto p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.equipe-texto ul {
+    list-style: none;
+}
+
+.equipe-texto li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 25px;
+}
+
+.equipe-texto li::before {
+    content: '→';
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 5rem;
+}
+
+.footer-logo {
+    color: #d4af37;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #d4af37;
+}
+
+.copyright {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Transições para os efeitos JS */
+.valor-card, .equipe-content img, .footer-logo {
+    transition: all 0.5s ease;
+}
+
+/* Garante que o parallax funcione */
+.historia {
+    background-attachment: fixed;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .historia, .equipe-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .equipe-content img {
+        order: -1;
+    }
+    
+}
