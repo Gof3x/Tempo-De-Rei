@@ -1,0 +1,509 @@
+/* [Mantenha todos os estilos anteriores e ADICIONE:] */
+/* ===== BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f8f5f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #000;
+    padding: 20px 0;
+    border-bottom: 2px solid #d4af37;
+    /* Dourado */
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #d4af37;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.slogan {
+    font-style: italic;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #f8f8f8;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* ===== AVISO VITRINE ===== */
+.aviso-vitrine {
+    background: #fff8e6;
+    border-left: 4px solid #d4af37;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 4px;
+}
+
+.aviso-vitrine i {
+    color: #d4af37;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+/* ===== CONTATO DIRETO ===== */
+.contato-direto {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    margin-bottom: 2rem;
+}
+
+.btn-whatsapp:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-whatsapp i {
+    margin-right: 10px;
+}
+
+.contato-info {
+    margin-top: 1.5rem;
+}
+
+.contato-info p {
+    margin: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #555;
+}
+
+.contato-info i {
+    color: #d4af37;
+}
+
+/* [Mantenha os estilos anteriores do FAQ e Footer] */
+
+/* ===== HERO CONTATO ===== */
+.hero-contato {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/imagens/fundo/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #d4af37;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===== CONTATO CONTAINER ===== */
+.contato-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+/* FORMULÁRIO */
+.form-contato {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-contato h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-contato h2 i {
+    color: #d4af37;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Playfair Display';
+    font-size: 1rem;
+    background: transparent;
+    z-index: 1;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-group label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: #777;
+    transition: all 0.3s;
+    background: white;
+    padding: 0 5px;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label,
+.form-group select:focus + label,
+.form-group select:valid + label,
+.form-group textarea:focus + label,
+.form-group textarea:valid + label {
+    top: -0.5rem;
+    left: 0.8rem;
+    font-size: 0.8rem;
+    color: #d4af37;
+    z-index: 2;
+}
+
+.btn-real {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-family: 'Playfair Display';
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.btn-real:hover {
+    background: #d4af37;
+    color: #000;
+    transform: translateY(-3px);
+}
+
+/* INFORMAÇÕES */
+.info-contato h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-contato h2 i {
+    color: #d4af37;
+}
+
+.info-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card i {
+    font-size: 1.5rem;
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+}
+
+.info-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.info-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.redes-reais {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.redes-reais h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.icones-redes {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.rede-social {
+    color: #000;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.rede-social:hover {
+    color: #d4af37;
+    transform: scale(1.2);
+}
+
+/* MAPA */
+.mapa-real {
+    margin-top: 4rem;
+}
+
+.mapa-real h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.mapa-real h2 i {
+    color: #d4af37;
+}
+
+.mapa-container {
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 5rem;
+}
+
+.footer-logo {
+    color: #d4af37;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #d4af37;
+}
+
+.copyright {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .contato-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .mapa-container {
+        height: 300px;
+    }
+}
+/* FAQ */
+.faq {
+    max-width: 800px;
+    margin: 4rem auto 0;
+}
+
+.faq h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.faq h2 i {
+    color: #d4af37;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-pergunta {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: left;
+    background: white;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Playfair Display';
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.faq-pergunta:hover {
+    background: #f9f9f9;
+}
+
+.faq-pergunta i {
+    color: #d4af37;
+    transition: transform 0.3s;
+}
+
+.faq-resposta {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: white;
+}
+
+.faq-resposta p {
+    padding: 1rem 0;
+}
+
+.faq-item.ativo .faq-pergunta i {
+    transform: rotate(180deg);
+}
+
+.faq-item.ativo .faq-resposta {
+    max-height: 300px;
+}
+
+/* Botão WhatsApp */
+.btn-whatsapp {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+}
+
+.btn-whatsapp i {
+    margin-right: 8px;
+}
